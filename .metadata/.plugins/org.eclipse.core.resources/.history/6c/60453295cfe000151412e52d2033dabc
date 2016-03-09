@@ -1,0 +1,43 @@
+<?php
+print "Qual o sexo do cliente? (m/f)" ;
+$SEXO = trimm(fgets(STDIN));
+print "Quantas cervejas foram consumidas?" ;
+$CERVEJAS = trimm(fgets(STDIN));
+PRINT "Quantos refrigerantes foram consumidos?" ;
+$REFRI = trimm(fgets(STDIN));
+print "Quantos espetinhos foram consumidos?" ;
+$ESPETINHO = trimm(fgets(STDIN));
+
+// SELECIONA VALOR DA ENTRADA 
+IF ($SEXO == "M" || $SEXO == "m"){
+	$ENTRADA = "10" ;
+}
+ELSE {
+	$ENTRADA = "8" ; 
+}
+
+//VALOR TOTAL DO CONSUMO(BEBIDAS E COMIDA)
+$CONSUMO = ($CERVEJAS*2.5)+($REFRI*2)+($ESPETINHO*4) ;
+
+//VERIFICA SE VAI COBRAR COVERT
+IF ($CONSUMO<="15"){
+	$COVERT = "3" ;
+}
+ELSE {
+	$COVERT = "0" ;
+}
+
+// CALCULA OS 10% DO GARÇON 
+$GARCON = ((10*($ENTRADA+$CONSUMO+$COVERT))/100) ;
+
+$TOTAL = ($ENTRADA+$CONSUMO+$COVERT+$GARCON) ;
+
+
+print  "Valor da conta:" ;
+print "R$ " . number_format($ENTRADA, 2,',','.') . "(Valor da entrada)" ;
+
+
+		
+
+
+ 

@@ -1,0 +1,5 @@
+<?php
+print "Digite o dia: " ;
+$dia =trim(fgets(stdin));
+print "Digite o Mes: " ;
+$mes= trim(fgets(stdin));
