@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;PHP While&apos;" deleteContents="false" description="Delete resource &apos;PHP While&apos;" element1="/PHP While" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1457570846498"/>
+</session>

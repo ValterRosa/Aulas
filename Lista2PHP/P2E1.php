@@ -1,0 +1,7 @@
+<?php
+print "Digite um numero Inteiro: " ;
+$num = trim(fgets(STDIN));
+while ($num!=0){
+	print "Digite outro numero: " ;
+	$num= trim(fgets(STDIN)) ;
+}
